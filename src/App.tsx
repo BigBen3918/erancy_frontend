@@ -6,6 +6,7 @@ import CheckOut from "./pages/CheckOut";
 import Contact from "./pages/Contact";
 
 import Header from "./components/layouts/header";
+import Footer from "./components/layouts/footer";
 
 function App() {
     return (
@@ -17,6 +18,7 @@ function App() {
                 <Route path="/checkout" element={<CheckOut />} />
                 <Route path="/contact" element={<Contact />} />
             </Routes>
+            <Footer />
         </div>
     );
 }

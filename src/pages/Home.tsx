@@ -1,5 +1,6 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { FaCaretRight } from "react-icons/fa6";
+import { FaTelegramPlane } from "react-icons/fa";
 import { Pagination } from "swiper/modules";
 import Card from "../components/Card";
 import BlogCard from "../components/Blog/Card";
@@ -130,32 +131,32 @@ function Home() {
             {/* End Section 1 */}
 
             {/* Start Section 2 */}
-            <div className="py-24 container mx-auto">
-                <div className="flex justify-center lg:justify-between items-center flex-wrap gap-5">
-                    <div className="p-4">
-                        <button className="relative overflow-hidden bg-cover bg-no-repeat rounded-3xl">
+            <div className="container mx-auto p-4 xxl:px-[150px] py-24">
+                <div className="grid grid-cols-1 sm:grid-cols-12 gap-5">
+                    <div className="col-span-1 sm:col-span-6 md:col-span-4">
+                        <button className="relative overflow-hidden bg-cover bg-no-repeat rounded-xl w-full">
                             <img
                                 src={Card1}
                                 alt="card-1"
-                                className="rounded-3xl transition duration-300 hover:scale-105"
+                                className="rounded-xl transition duration-300 hover:scale-105 w-full"
                             />
                         </button>
                     </div>
-                    <div className="p-4">
-                        <button className="relative overflow-hidden bg-cover bg-no-repeat rounded-3xl">
+                    <div className="col-span-1 sm:col-span-6 md:col-span-4">
+                        <button className="relative overflow-hidden bg-cover bg-no-repeat rounded-xl w-full">
                             <img
                                 src={Card2}
                                 alt="card-1"
-                                className="rounded-3xl transition duration-300 hover:scale-105"
+                                className="rounded-xl transition duration-300 hover:scale-105 w-full"
                             />
                         </button>
                     </div>
-                    <div className="p-4">
-                        <button className="relative overflow-hidden bg-cover bg-no-repeat rounded-3xl">
+                    <div className="col-span-1 sm:col-span-6 md:col-span-4">
+                        <button className="relative overflow-hidden bg-cover bg-no-repeat rounded-xl w-full">
                             <img
                                 src={Card3}
                                 alt="card-1"
-                                className="rounded-3xl transition duration-300 hover:scale-105"
+                                className="rounded-xl transition duration-300 hover:scale-105 w-full"
                             />
                         </button>
                     </div>
@@ -164,7 +165,7 @@ function Home() {
             {/* End Section  2 */}
 
             {/* Start Section 3 */}
-            <div className="container mx-auto p-4">
+            <div className="container mx-auto p-4 xxl:px-[150px]">
                 <div className="pb-12">
                     <h2 className="text-[50px] font-normal">Best Product</h2>
                     <p className="max-w-[430px]">
@@ -181,21 +182,19 @@ function Home() {
             {/* End Section 3 */}
 
             {/* Start Section 4 */}
-            <div className="container mx-auto py-10">
-                <div className="p-4">
-                    <button className="w-full flex relative overflow-hidden bg-cover bg-no-repeat rounded-xl">
-                        <img
-                            src={MarketIMG}
-                            alt=""
-                            className="w-full rounded-xl transition duration-300 hover:scale-105"
-                        />
-                    </button>
-                </div>
+            <div className="container mx-auto py-10 p-4 xxl:px-[150px]">
+                <button className="w-full flex relative overflow-hidden bg-cover bg-no-repeat rounded-xl">
+                    <img
+                        src={MarketIMG}
+                        alt=""
+                        className="w-full rounded-xl transition duration-300 hover:scale-105"
+                    />
+                </button>
             </div>
             {/* End Section 4 */}
 
             {/* Start Section 5 */}
-            <div className="container mx-auto p-4">
+            <div className="container mx-auto p-4 xxl:px-[150px]">
                 <div className="pb-12">
                     <h2 className="text-[50px] font-normal">
                         Top Sale Products
@@ -216,70 +215,68 @@ function Home() {
             {/* End Section 5 */}
 
             {/* Start Section 6 */}
-            <div className="container mx-auto py-[110px]">
-                <div className="px-4">
-                    <Swiper
-                        slidesPerView={1}
-                        spaceBetween={10}
-                        loop={true}
-                        breakpoints={{
-                            450: {
-                                slidesPerView: 2,
-                                spaceBetween: 20,
-                            },
-                            768: {
-                                slidesPerView: 4,
-                                spaceBetween: 40,
-                            },
-                        }}
-                    >
-                        <SwiperSlide>
-                            <div className="flex justify-center items-center">
-                                <img src={BrandIMG1} alt="brand1" />
-                            </div>
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <div className="flex justify-center items-center">
-                                <img src={BrandIMG2} alt="brand1" />
-                            </div>
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <div className="flex justify-center items-center">
-                                <img src={BrandIMG3} alt="brand1" />
-                            </div>
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <div className="flex justify-center items-center">
-                                <img src={BrandIMG4} alt="brand1" />
-                            </div>
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <div className="flex justify-center items-center">
-                                <img src={BrandIMG1} alt="brand1" />
-                            </div>
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <div className="flex justify-center items-center">
-                                <img src={BrandIMG2} alt="brand1" />
-                            </div>
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <div className="flex justify-center items-center">
-                                <img src={BrandIMG3} alt="brand1" />
-                            </div>
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <div className="flex justify-center items-center">
-                                <img src={BrandIMG4} alt="brand1" />
-                            </div>
-                        </SwiperSlide>
-                    </Swiper>
-                </div>
+            <div className="container mx-auto p-4 xxl:px-[150px] py-[110px]">
+                <Swiper
+                    slidesPerView={1}
+                    spaceBetween={10}
+                    loop={true}
+                    breakpoints={{
+                        450: {
+                            slidesPerView: 2,
+                            spaceBetween: 20,
+                        },
+                        768: {
+                            slidesPerView: 4,
+                            spaceBetween: 40,
+                        },
+                    }}
+                >
+                    <SwiperSlide>
+                        <div className="flex justify-center items-center">
+                            <img src={BrandIMG1} alt="brand1" />
+                        </div>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <div className="flex justify-center items-center">
+                            <img src={BrandIMG2} alt="brand1" />
+                        </div>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <div className="flex justify-center items-center">
+                            <img src={BrandIMG3} alt="brand1" />
+                        </div>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <div className="flex justify-center items-center">
+                            <img src={BrandIMG4} alt="brand1" />
+                        </div>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <div className="flex justify-center items-center">
+                            <img src={BrandIMG1} alt="brand1" />
+                        </div>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <div className="flex justify-center items-center">
+                            <img src={BrandIMG2} alt="brand1" />
+                        </div>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <div className="flex justify-center items-center">
+                            <img src={BrandIMG3} alt="brand1" />
+                        </div>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <div className="flex justify-center items-center">
+                            <img src={BrandIMG4} alt="brand1" />
+                        </div>
+                    </SwiperSlide>
+                </Swiper>
             </div>
             {/* End Section 6 */}
 
             {/* Start Section 7 */}
-            <div className="container mx-auto p-4">
+            <div className="container mx-auto p-4 xxl:px-[150px]">
                 <div className="pb-12 flex flex-col items-center justify-center text-center">
                     <h2 className="text-[50px] font-normal">Blog Posts</h2>
                     <p className="max-w-[430px]">
@@ -295,6 +292,42 @@ function Home() {
                 </div>
             </div>
             {/* End Section 7 */}
+
+            {/* Start Section 8 */}
+            <div className="container p-4 xxl:px-[150px] mx-auto py-[100px]">
+                <div
+                    className="rounded-xl"
+                    style={{
+                        backgroundImage: "url(./join_us-back.webp)",
+                        backgroundSize: "cover",
+                    }}
+                >
+                    <div className="py-[20px] md:py-[50px] px-[30px] md:px-[150px]">
+                        <div className="flex justify-center xl:justify-between items-center gap-3 p-4 flex-wrap">
+                            <div>
+                                <h2 className="text-[35px] sm:text-[50px] font-medium capitalize pb-3">
+                                    Join with us
+                                </h2>
+                                <p className="text-[1rem] font-normal max-w-[310px]">
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit ut aliquam.
+                                </p>
+                            </div>
+                            <div className="relative">
+                                <input
+                                    type="text"
+                                    className="border-[1px] border-[#dc7354] rounded-[10px] font-[13px] italic text-[#979797] pl-5 pr-[70px] py-2.5 outline-none w-full sm:w-[400px]"
+                                    placeholder="enter your em"
+                                />
+                                <button className="bg-[#ce4820] rounded-[10px] absolute top-0 right-0 border-none text-white h-full w-[50px] font-[15px] flex justify-center items-center">
+                                    <FaTelegramPlane />
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {/* End Section 8 */}
         </div>
     );
 }
@@ -365,21 +398,21 @@ const blogs: BlogInterface[] = [
         date: "FEBRUARY 13, 2021",
         by: "TOMAS DE MOMEN",
         img: blogIMG1,
-        color: 0,
+        color: "#ff9c9c",
     },
     {
         title: "Lorem ipsum dolor sit amet consectetur adipiscing.",
         date: "FEBRUARY 13, 2021",
         by: "TOMAS DE MOMEN",
         img: blogIMG2,
-        color: 1,
+        color: "#a49cff",
     },
     {
         title: "Lorem ipsum dolor sit amet consectetur adipiscing.",
         date: "FEBRUARY 13, 2021",
         by: "TOMAS DE MOMEN",
         img: blogIMG3,
-        color: 2,
+        color: "#9cdbff",
     },
 ];
 

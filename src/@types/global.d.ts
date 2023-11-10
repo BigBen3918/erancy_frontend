@@ -15,5 +15,5 @@ interface BlogInterface {
     date: string;
     by: string;
     img: string;
-    color: number;
+    color: string;
 }

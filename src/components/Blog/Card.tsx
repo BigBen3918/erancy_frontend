@@ -3,16 +3,19 @@ import { Link } from "react-router-dom";
 function BlogCard({ item }: { item: BlogInterface }) {
     return (
         <div className="col-span1 sm:col-span-6 lg:col-span-4">
-            <div className="w-full">
-                <img src={item.img} alt="blog" className="w-full" />
+            <div className="w-full relative overflow-hidden bg-cover bg-no-repeat rounded-lg">
+                <img
+                    src={item.img}
+                    alt="blog"
+                    className="w-full rounded-lg transition duration-300 hover:scale-105"
+                />
             </div>
             <div className="py-4">
                 <button
-                    className={`bg-[${
-                        colors[item.color]
-                    }] text-red px-5 py-2 rounded-[50px]`}
+                    className={`text-red px-7 py-2 rounded-[50px] opacity-70 hover:opacity-100 font-medium`}
+                    style={{ background: `${item.color}` }}
                 >
-                    BEAUTY {colors[item.color]}
+                    BEAUTY
                 </button>
             </div>
             <div className="py-4">
@@ -38,7 +41,5 @@ function BlogCard({ item }: { item: BlogInterface }) {
         </div>
     );
 }
-
-const colors: string[] = ["#ff9c9c", "#a49cff", "#9cdbff"];
 
 export default BlogCard;
