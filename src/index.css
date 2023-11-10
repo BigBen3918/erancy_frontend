@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.swiper-pagination {
+    text-align: left !important;
+    margin-bottom: 30px;
+    padding-left: 50px;
+}
+
+.swiper-pagination > span {
+    width: 50px;
+    height: 6px;
+    border-radius: 50px;
+}
+
+@media screen and (max-width: 992px) {
+    .swiper-pagination {
+        text-align: center !important;
+    }
+}
+
+.Card {
+    transition: all 0.5s ease-in-out;
+}
+
+.sub_card {
+    margin-top: 0;
+    transition: all 0.5s ease;
+    overflow: hidden;
+}
+
+.sub_button {
+    bottom: 0;
+    margin-bottom: -86px;
+    transition: all 0.5s ease;
+}
+
+.Card:hover img {
+    transform: scale(1.2);
+}
+
+.Card:hover .sub_button {
+    display: block;
+}
+
+.Card:hover .sub_card {
+    margin-top: -86px;
+}
+
+.Card:hover .sub_button {
+    margin-bottom: 0;
+}
