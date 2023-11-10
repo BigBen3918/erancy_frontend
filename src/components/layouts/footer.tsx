@@ -29,7 +29,7 @@ function Footer() {
                                 <Link
                                     to={item}
                                     key={index}
-                                    className="capitalize"
+                                    className="capitalize hover:underline hover:text-red-400 transition-colors duration-300"
                                 >
                                     {item}
                                 </Link>
