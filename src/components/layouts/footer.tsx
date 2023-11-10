@@ -55,7 +55,7 @@ function Footer() {
                 </div>
                 <div className="border-t-[1px] border-zinc-300">
                     <p className="p-3 text-center">
-                        © 2022 Brancy. Made with SuperDeveloper
+                        © 2022 Brancy. Made with ❤ by SuperDeveloper
                     </p>
                 </div>
             </div>

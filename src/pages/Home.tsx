@@ -20,13 +20,11 @@ import MarketIMG from "../assets/market.webp";
 import TopIMG1 from "../assets/product/top-1.webp";
 import TopIMG2 from "../assets/product/top-2.webp";
 import TopIMG3 from "../assets/product/top-3.webp";
-import BrandIMG1 from "../assets/brandSlide/1.webp";
-import BrandIMG2 from "../assets/brandSlide/2.webp";
-import BrandIMG3 from "../assets/brandSlide/3.webp";
-import BrandIMG4 from "../assets/brandSlide/4.webp";
+
 import blogIMG1 from "../assets/blog/1.webp";
 import blogIMG2 from "../assets/blog/2.webp";
 import blogIMG3 from "../assets/blog/3.webp";
+import BrandSlide from "../components/BrandSlide";
 
 function Home() {
     1;
@@ -215,64 +213,7 @@ function Home() {
             {/* End Section 5 */}
 
             {/* Start Section 6 */}
-            <div className="container mx-auto p-4 xxl:px-[150px] py-[110px]">
-                <Swiper
-                    slidesPerView={1}
-                    spaceBetween={10}
-                    loop={true}
-                    breakpoints={{
-                        450: {
-                            slidesPerView: 2,
-                            spaceBetween: 20,
-                        },
-                        768: {
-                            slidesPerView: 4,
-                            spaceBetween: 40,
-                        },
-                    }}
-                >
-                    <SwiperSlide>
-                        <div className="flex justify-center items-center">
-                            <img src={BrandIMG1} alt="brand1" />
-                        </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <div className="flex justify-center items-center">
-                            <img src={BrandIMG2} alt="brand1" />
-                        </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <div className="flex justify-center items-center">
-                            <img src={BrandIMG3} alt="brand1" />
-                        </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <div className="flex justify-center items-center">
-                            <img src={BrandIMG4} alt="brand1" />
-                        </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <div className="flex justify-center items-center">
-                            <img src={BrandIMG1} alt="brand1" />
-                        </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <div className="flex justify-center items-center">
-                            <img src={BrandIMG2} alt="brand1" />
-                        </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <div className="flex justify-center items-center">
-                            <img src={BrandIMG3} alt="brand1" />
-                        </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <div className="flex justify-center items-center">
-                            <img src={BrandIMG4} alt="brand1" />
-                        </div>
-                    </SwiperSlide>
-                </Swiper>
-            </div>
+            <BrandSlide />
             {/* End Section 6 */}
 
             {/* Start Section 7 */}
