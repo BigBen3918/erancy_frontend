@@ -160,8 +160,8 @@ function Home() {
                                         data-swiper-parallax-duration={1500}
                                     >
                                         <img
-                                            src={Slider1}
-                                            alt="Slider-1"
+                                            src={Slider2}
+                                            alt="Slider-2"
                                             className="object-cover align-middle"
                                         />
                                     </div>
