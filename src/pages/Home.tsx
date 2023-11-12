@@ -1,7 +1,7 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { FaCaretRight } from "react-icons/fa6";
 import { FaTelegramPlane } from "react-icons/fa";
-import { Pagination } from "swiper/modules";
+import { Pagination, Parallax } from "swiper/modules";
 import Card from "../components/Card";
 import BlogCard from "../components/Blog/Card";
 import Slider1 from "../assets/slider1.webp";
@@ -27,7 +27,6 @@ import blogIMG3 from "../assets/blog/3.webp";
 import BrandSlide from "../components/BrandSlide";
 
 function Home() {
-    1;
     return (
         <div>
             {/* Start Section 1 */}
@@ -35,6 +34,7 @@ function Home() {
                 {/* Section 1 */}
                 <div className="rounded-3xl w-full bg-[#fcebed]">
                     <Swiper
+                        speed={600}
                         spaceBetween={50}
                         slidesPerView={1}
                         onSlideChange={() => console.log("slide change")}
@@ -43,7 +43,8 @@ function Home() {
                         pagination={{
                             clickable: true,
                         }}
-                        modules={[Pagination]}
+                        modules={[Pagination, Parallax]}
+                        parallax={true}
                     >
                         <SwiperSlide>
                             <div className="flex justify-center items-center mx-auto w-full sm:max-w-[630px] md:max-w-[800px] lg:max-w-[1000px] xl:max-w-[1300px] p-5 flex-col md:flex-row">
@@ -51,22 +52,40 @@ function Home() {
                                     <img
                                         src={TextLogo}
                                         alt="text-logo"
-                                        className="absolute top-[-8vw] sm:top-[-60px] md:top-[-120px] -left-[50px] -z-10 scale-50 lg:scale-75 lg:left-[2px] xl:scale-100"
+                                        className="-mb-36 w-full md:w-[250px] md:-mb-24 lg:-mb-28 lg:w-[350px] xl:w-[400px]"
+                                        data-swiper-parallax-x={"-300"}
+                                        data-swiper-parallax-opacity={0}
+                                        data-swiper-parallax-duration={2000}
                                     />
-                                    <h1 className="text-[30px] text-[#231942] font-bold pt-[75px] md:pt-[0px] md:text-[45px] lg:text-[55px] xl:text-[67px]">
+                                    <h1
+                                        className="text-[30px] text-[#231942] font-bold pt-[75px] md:pt-[0px] md:text-[40px] lg:text-[55px] xl:text-[67px]"
+                                        data-swiper-parallax-x={"-300"}
+                                        data-swiper-parallax-opacity={0}
+                                        data-swiper-parallax-duration={2000}
+                                    >
                                         ANTI AGENING
                                     </h1>
-                                    <p className="text-[17] max-w-[410px] text-zinc-600 font-medium lg:text-[21px]">
+                                    <p
+                                        className="text-[17] max-w-[410px] text-zinc-600 font-medium lg:text-[21px]"
+                                        data-swiper-parallax-x={"-300"}
+                                        data-swiper-parallax-opacity={0}
+                                        data-swiper-parallax-duration={2000}
+                                    >
                                         Lorem ipsum dolor sit amet, consectetur
                                         adipiscing elit ut aliquam, purus sit
                                         amet luctus venenatis.
                                     </p>
-                                    <div className="flex justify-start items-center gap-3 pt-3 flex-wrap">
-                                        <button className="px-10 py-3 border-[2px] border-[#f87171] rounded-[50px] tracking-[5px] hover:bg-red-400 transition-all duration-300">
+                                    <div
+                                        className="flex justify-start items-center gap-3 pt-3 flex-wrap"
+                                        data-swiper-parallax-y={"-100"}
+                                        data-swiper-parallax-opacity={0}
+                                        data-swiper-parallax-duration={2000}
+                                    >
+                                        <button className="md:px-7 md:py-2 px-10 py-3 border-[2px] border-[#f87171] rounded-[50px] tracking-[5px] hover:bg-red-400 transition-all duration-300">
                                             BUY NOW
                                         </button>
                                         <button className="flex items-center justify-center gap-3 hover:text-red-600">
-                                            <div className="w-[50px] h-[50px] flex items-center justify-center rounded-full bg-red-500 text-white">
+                                            <div className="md:w-[40px] md:h-[40px] w-[50px] h-[50px] flex items-center justify-center rounded-full bg-red-500 text-white">
                                                 <FaCaretRight />
                                             </div>
                                             <h3>Play Now</h3>
@@ -74,7 +93,11 @@ function Home() {
                                     </div>
                                 </div>
                                 <div className="flex flex-1 justify-center items-center">
-                                    <div>
+                                    <div
+                                        data-swiper-parallax-scale={0.5}
+                                        data-swiper-parallax-opacity={0}
+                                        data-swiper-parallax-duration={1500}
+                                    >
                                         <img
                                             src={Slider1}
                                             alt="Slider-1"
@@ -90,22 +113,40 @@ function Home() {
                                     <img
                                         src={TextLogo}
                                         alt="text-logo"
-                                        className="absolute top-[-8vw] sm:top-[-60px] md:top-[-120px] -left-[50px] -z-10 scale-50 lg:scale-75 lg:left-[2px] xl:scale-100"
+                                        className="-mb-36 w-full md:w-[250px] md:-mb-24 lg:-mb-28 lg:w-[350px] xl:w-[400px]"
+                                        data-swiper-parallax-x={"-300"}
+                                        data-swiper-parallax-opacity={0}
+                                        data-swiper-parallax-duration={2000}
                                     />
-                                    <h1 className="text-[30px] text-[#231942] font-bold pt-[75px] md:pt-[0px] md:text-[45px] lg:text-[55px] xl:text-[67px]">
+                                    <h1
+                                        className="text-[30px] text-[#231942] font-bold pt-[75px] md:pt-[0px] md:text-[40px] lg:text-[55px] xl:text-[67px]"
+                                        data-swiper-parallax-x={"-300"}
+                                        data-swiper-parallax-opacity={0}
+                                        data-swiper-parallax-duration={2000}
+                                    >
                                         CLEAN FRESH
                                     </h1>
-                                    <p className="text-[17] max-w-[410px] text-zinc-600 font-medium lg:text-[21px]">
+                                    <p
+                                        className="text-[17] max-w-[410px] text-zinc-600 font-medium lg:text-[21px]"
+                                        data-swiper-parallax-x={"-300"}
+                                        data-swiper-parallax-opacity={0}
+                                        data-swiper-parallax-duration={2000}
+                                    >
                                         Lorem ipsum dolor sit amet, consectetur
                                         adipiscing elit ut aliquam, purus sit
                                         amet luctus venenatis.
                                     </p>
-                                    <div className="flex justify-start items-center gap-3 pt-3 flex-wrap">
-                                        <button className="px-10 py-3 border-[2px] border-[#f87171] rounded-[50px] tracking-[5px] hover:bg-red-400 transition-all duration-300">
+                                    <div
+                                        className="flex justify-start items-center gap-3 pt-3 flex-wrap"
+                                        data-swiper-parallax-y={"-100"}
+                                        data-swiper-parallax-opacity={0}
+                                        data-swiper-parallax-duration={2000}
+                                    >
+                                        <button className="md:px-7 md:py-2 px-10 py-3 border-[2px] border-[#f87171] rounded-[50px] tracking-[5px] hover:bg-red-400 transition-all duration-300">
                                             BUY NOW
                                         </button>
                                         <button className="flex items-center justify-center gap-3 hover:text-red-600">
-                                            <div className="w-[50px] h-[50px] flex items-center justify-center rounded-full bg-red-500 text-white">
+                                            <div className="md:w-[40px] md:h-[40px] w-[50px] h-[50px] flex items-center justify-center rounded-full bg-red-500 text-white">
                                                 <FaCaretRight />
                                             </div>
                                             <h3>Play Now</h3>
@@ -113,10 +154,14 @@ function Home() {
                                     </div>
                                 </div>
                                 <div className="flex flex-1 justify-center items-center">
-                                    <div>
+                                    <div
+                                        data-swiper-parallax-scale={0.5}
+                                        data-swiper-parallax-opacity={0}
+                                        data-swiper-parallax-duration={1500}
+                                    >
                                         <img
-                                            src={Slider2}
-                                            alt="Slider-2"
+                                            src={Slider1}
+                                            alt="Slider-1"
                                             className="object-cover align-middle"
                                         />
                                     </div>
