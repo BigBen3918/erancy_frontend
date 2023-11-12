@@ -1,6 +1,11 @@
 import { Link } from "react-router-dom";
 import LogoIMG from "../../assets/logo.webp";
-import { FaTwitter, FaFacebook, FaPinterest } from "react-icons/fa";
+import { FaTwitter, FaFacebookF, FaPinterestP } from "react-icons/fa";
+
+interface FooterInterface {
+    label: string;
+    href: string;
+}
 
 function Footer() {
     return (
@@ -24,14 +29,14 @@ function Footer() {
                         <h4 className="text-[18px] font-semibold mb-[35px]">
                             Information
                         </h4>
-                        <div className="flex items-center justify-start gap-8 flex-wrap">
-                            {infos.map((item: string, index) => (
+                        <div className="grid grid-cols-3 gap-y-5">
+                            {infos.map((item: FooterInterface, index) => (
                                 <Link
-                                    to={item}
+                                    to={item.href}
                                     key={index}
-                                    className="capitalize hover:underline hover:text-red-400 transition-colors duration-300"
+                                    className="col-span-1 capitalize hover:underline hover:text-red-400 transition-colors duration-300"
                                 >
-                                    {item}
+                                    {item.label}
                                 </Link>
                             ))}
                         </div>
@@ -40,15 +45,15 @@ function Footer() {
                         <h4 className="text-[18px] font-semibold mb-[35px]">
                             Social Info
                         </h4>
-                        <div className="flex justify-start items-center text-[25px]">
+                        <div className="flex justify-start items-center text-[20px]">
                             <Link to="/">
                                 <FaTwitter />
                             </Link>
-                            <Link to="/" className="ml-[30px]">
-                                <FaFacebook />
+                            <Link to="/" className="ml-[50px]">
+                                <FaFacebookF />
                             </Link>
-                            <Link to="/" className="ml-[30px]">
-                                <FaPinterest />
+                            <Link to="/" className="ml-[50px]">
+                                <FaPinterestP />
                             </Link>
                         </div>
                     </div>
@@ -63,6 +68,14 @@ function Footer() {
     );
 }
 
-const infos: string[] = ["about", "checkout", "contact"];
+const infos: FooterInterface[] = [
+    { label: "Blog", href: "blog" },
+    { label: "About Us", href: "about" },
+    { label: "Privacy", href: "contact" },
+    { label: "Login", href: "login" },
+    { label: "Shop", href: "shop" },
+    { label: "My Account", href: "account" },
+    { label: "FAQs", href: "faqs" },
+];
 
 export default Footer;
