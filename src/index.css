@@ -56,3 +56,39 @@ body {
 .Card:hover .sub_button {
     margin-bottom: 0;
 }
+
+.leffect:hover .light::before {
+    left: 180%;
+    opacity: 0;
+}
+
+.leffect:hover .light::after {
+    left: -50%;
+    opacity: 0;
+}
+
+.light::before {
+    content: "";
+    background-color: rgba(255, 255, 255, 0.3);
+    height: 200%;
+    position: absolute;
+    top: -50%;
+    left: -100%;
+    transform: rotate(35deg);
+    transition: all 2s cubic-bezier(0.19, 1, 0.22, 1);
+    width: 80px;
+    z-index: 1;
+}
+
+.light::after {
+    content: "";
+    background-color: rgba(255, 255, 255, 0.3);
+    height: 200%;
+    position: absolute;
+    top: -50%;
+    left: 180%;
+    transform: rotate(35deg);
+    transition: all 2s cubic-bezier(0.19, 1, 0.22, 1);
+    width: 80px;
+    z-index: 1;
+}

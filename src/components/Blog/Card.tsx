@@ -2,8 +2,8 @@ import { Link } from "react-router-dom";
 
 function BlogCard({ item }: { item: BlogInterface }) {
     return (
-        <div className="col-span1 sm:col-span-6 lg:col-span-4">
-            <div className="w-full relative overflow-hidden bg-cover bg-no-repeat rounded-lg">
+        <div className="col-span1 sm:col-span-6 lg:col-span-4 leffect">
+            <div className="light w-full relative overflow-hidden bg-cover bg-no-repeat rounded-lg">
                 <img
                     src={item.img}
                     alt="blog"

@@ -130,9 +130,9 @@ function Home() {
 
             {/* Start Section 2 */}
             <div className="container mx-auto p-4 xxl:px-[150px] py-24">
-                <div className="grid grid-cols-1 sm:grid-cols-12 gap-5">
-                    <div className="col-span-1 sm:col-span-6 md:col-span-4">
-                        <button className="relative overflow-hidden bg-cover bg-no-repeat rounded-xl w-full">
+                <div className="grid grid-cols-1 sm:grid-cols-12 gap-7">
+                    <div className="col-span-1 sm:col-span-6 md:col-span-4 leffect">
+                        <button className="light relative overflow-hidden bg-cover bg-no-repeat rounded-xl w-full">
                             <img
                                 src={Card1}
                                 alt="card-1"
@@ -140,20 +140,20 @@ function Home() {
                             />
                         </button>
                     </div>
-                    <div className="col-span-1 sm:col-span-6 md:col-span-4">
-                        <button className="relative overflow-hidden bg-cover bg-no-repeat rounded-xl w-full">
+                    <div className="col-span-1 sm:col-span-6 md:col-span-4 leffect">
+                        <button className="light relative overflow-hidden bg-cover bg-no-repeat rounded-xl w-full">
                             <img
                                 src={Card2}
-                                alt="card-1"
+                                alt="card-2"
                                 className="rounded-xl transition duration-300 hover:scale-105 w-full"
                             />
                         </button>
                     </div>
-                    <div className="col-span-1 sm:col-span-6 md:col-span-4">
-                        <button className="relative overflow-hidden bg-cover bg-no-repeat rounded-xl w-full">
+                    <div className="col-span-1 sm:col-span-6 md:col-span-4 leffect">
+                        <button className="light relative overflow-hidden bg-cover bg-no-repeat rounded-xl w-full">
                             <img
                                 src={Card3}
-                                alt="card-1"
+                                alt="card-3"
                                 className="rounded-xl transition duration-300 hover:scale-105 w-full"
                             />
                         </button>
@@ -180,8 +180,8 @@ function Home() {
             {/* End Section 3 */}
 
             {/* Start Section 4 */}
-            <div className="container mx-auto py-10 p-4 xxl:px-[150px]">
-                <button className="w-full flex relative overflow-hidden bg-cover bg-no-repeat rounded-xl">
+            <div className="container mx-auto py-10 p-4 xxl:px-[150px] leffect">
+                <button className="light w-full flex relative overflow-hidden bg-cover bg-no-repeat rounded-xl">
                     <img
                         src={MarketIMG}
                         alt=""
